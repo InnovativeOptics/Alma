@@ -25,7 +25,8 @@ app_ui <- function(request) {
     # Your application UI logic
     page_fluid(
       theme = alma_theme,
-      card(card_header(inverse = T,
+      card(class="shadow p-3 mb-5 bg-body rounded",
+
                        fluidRow(
                          column(6,
                                 align = 'left',
@@ -40,8 +41,9 @@ app_ui <- function(request) {
                                     "Get in touch with Alma",
                                     href = "https://almalasers.com/get-in-touch/"))
 
-                         )))
-           ,fluidRow(column(12,align='center',
+                         ))
+           ,hr(),
+           fluidRow(column(12,align='center',
                             h2(strong("Search eye protection by selecting a laser device"))))
       ),
       fluidRow(
@@ -71,7 +73,7 @@ app_ui <- function(request) {
                         h3(
                           tableOutput("userInfo")))
         ),
-        card(
+        card(class="shadow p-3 mb-5 bg-body rounded",
           fluidRow(column(12,
                           align = "center",
                           h3(
@@ -86,47 +88,51 @@ app_ui <- function(request) {
                           h6("The items you add to your cart will remain there until you are finished searching")
           ))
         ),
-        card(
           fluidRow(column(12,
                           align = 'center',
                           h3(
                             em("Frequently Purchased Together")))),
           fluidRow(
             column(6, align = 'center',
-                   a(target = "_blank",
+                   card(class="shadow p-3 mb-5 bg-body rounded",
+                        a(target = "_blank",
                      href = "https://innovativeoptics.com/product/laser-vee-shield-disposable-patient-protection/",
                      img(src = "https://innovativeoptics.com/wp-content/uploads/2022/04/Laser-vee-shield.new-copy.jpg",
                          width = "300px")),
-                   h4("Disposable Laser Protection for Patients")),
+                   h4("Disposable Laser Protection for Patients"))),
             column(6, align = 'center',
-                   a(target = "_blank",
+                   card(class="shadow p-3 mb-5 bg-body rounded",
+                        a(target = "_blank",
                      href = "https://innovativeoptics.com/product/ipl-vee-shield-disposable-patient-eye-protection/",
                      img(src = "https://innovativeoptics.com/wp-content/uploads/2022/04/IPL-flex-foam.website.jpg",
                          width = "300px")),
-                   h4("Disposable IPL Protection for Patients"))),
+                   h4("Disposable IPL Protection for Patients")))),
           fluidRow(
             column(6, align = 'center',
-                   a(target = "_blank",
+                   card(class="shadow p-3 mb-5 bg-body rounded",
+                        a(target = "_blank",
                      href = "https://innovativeoptics.com/product/ptceiii-blue-adjustable-patient-goggle/",
                      img(src = "https://innovativeoptics.com/wp-content/uploads/2019/07/PTCEIII-Blue-NEW.jpg",
                          width = "300px")),
                    h4("Reusable Laser Protection for Patients"),
-                   h4("w/ Independent Eyecup Motion")),
+                   h4("w/ Independent Eyecup Motion"))),
             column(6, align = 'center',
-                   a(target = "_blank",
+                   card(class="shadow p-3 mb-5 bg-body rounded",
+                        a(target = "_blank",
                      href = "https://innovativeoptics.com/product/bbce/",
                      img(src = "https://innovativeoptics.com/wp-content/uploads/2021/04/BBCE-white-silicone-straps.jpg",
                          width = "300px")),
                    h4("Reusable Laser Protection for Patients"),
-                   h4("w/o Independent Eyecup Motion"))
+                   h4("w/o Independent Eyecup Motion")))
           )
-        )),
-      card(card_footer(h5(
+        ),
+      card(class="shadow p-3 mb-5 bg-body rounded",
+        h5(
         style = {
           "color: black;
                          text-shadow: 1px 1px 1px black;"
         },
-        "Powered by Innovative Optics")))
+        "Powered by Innovative Optics"))
     )
   )
 }
