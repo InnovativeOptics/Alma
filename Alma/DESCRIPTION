@@ -1,0 +1,19 @@
+Package: Alma
+Title: AlmaLasers
+Version: 0.0.0.9000
+Authors@R: person('John', 'Lecocq', email = 'john@innovativeoptics.com', role = c('cre', 'aut'))
+Description: An application for Alma trainers to find LEP.
+License: What license is it under?
+Imports: 
+    bslib,
+    config (>= 0.3.1),
+    dplyr,
+    golem (>= 0.4.0),
+    pkgload,
+    purrr,
+    readxl,
+    scales,
+    shiny (>= 1.7.4)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3

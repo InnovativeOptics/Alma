@@ -1,0 +1,13 @@
+name: Alma
+title: Alma
+username:
+account: invo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9374162
+bundleId: 7394928
+url: https://invo.shinyapps.io/Alma/
+when: 1687898893.9653
+lastSyncTime: 1687898893.96534
+asMultiple: FALSE
+asStatic: FALSE
